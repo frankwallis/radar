@@ -4,6 +4,11 @@ function init(h,w) {
 
  var activeItem = null;
  
+ var shapes = {
+	t: "circle",
+	c: "triangle",
+	s: "square" }
+ 
  var radar = new pv.Panel()
       .width(w)
       .height(h)
@@ -19,22 +24,22 @@ function init(h,w) {
          .bottom(function(d) { var y = polar_to_raster(d.pc.r, d.pc.t)[1];                                 
                   console.log("name:" + d.name + ", y:" + y); return y;})
          .title(function(d) { return d.name;})
-		 .font('14px sans-serif')
+	 .font('14px sans-serif')
          .angle(45)
          .fillStyle(function(d) { return (activeItem == d ? "red" : "#aec7e8"); })
-		 .size(60)
-         .shape(function(d) {return (d.movement === 't' ? "triangle" : "circle");})
-		 .events("all")
-		 .event("click", function(d) {activeItem = d; return this.parent;})
+	 .size(60)
+         .shape(function(d) {return shapes[d.movement]; })
+	 .events("all")
+	 .event("click", function(d) {activeItem = d; return this.parent;})
 		 //.event("mousedown", pv.Behavior.select())
 		 //.event("select", function(d) {activeItem = d; return this.parent;})
          .anchor("top").add(pv.Label)
-             .text(function(d) { return (activeItem == d ? d.name : this.index + 1 + "");}) 
-			 .title(function(d) { return d.name;})
-			 //.events("all") 
-			 //.event("click", function(d) {activeItem = d; return this.parent.parent;})
-			 .font('14px sans-serif')
-			 .textAlign("left");
+         .text(function(d) { return (activeItem == d ? d.name : this.index + 1 + "");}) 
+	 .title(function(d) { return d.name;})
+	 //.events("all") 
+	 //.event("click", function(d) {activeItem = d; return this.parent.parent;})
+	 .font('14px sans-serif')
+	 .textAlign("left");
 
 function draw_legend(quad, left, top) {
 
@@ -86,7 +91,7 @@ for (var i = 0; i < radar_quadrants.length; i++) {
         .size(50) 
         .strokeStyle(null) 
         .angle(45)
-        .shape(function(d) {return (d.movement === 't' ? "triangle" : "circle");})        
+        .shape(function(d) {return shapes[d.movement]; })
 		.fillStyle(function(d) { return (activeItem == d ? "red" : "#aec7e8"); })
 		.events("all")
   	    .event("click", function(d) {activeItem = d; return this.parent;})
@@ -112,7 +117,7 @@ for (var i = 0; i < radar_quadrants.length; i++) {
         .size(50) 
         .strokeStyle(null) 
         .angle(45)
-        .shape(function(d) {return (d.movement === 't' ? "triangle" : "circle");})        
+        .shape(function(d) {return shapes[d.movement]; })
 		.fillStyle(function(d) { return (activeItem == d ? "red" : "#aec7e8"); })
 		.events("all")
 		.event("click", function(d) {activeItem = d; return this.parent;})
@@ -133,7 +138,7 @@ for (var i = 0; i < radar_quadrants.length; i++) {
         .top(function() {return (40 + this.index * 20);}) 
         .size(50) 
         .angle(45)
-        .shape(function(d) {return (d.movement === 't' ? "triangle" : "circle");})         
+        .shape(function(d) {return shapes[d.movement]; })
         .strokeStyle(null) 
         .fillStyle(function(d) { return (activeItem == d ? "red" : "#aec7e8"); })
 		.events("all")
@@ -156,7 +161,7 @@ for (var i = 0; i < radar_quadrants.length; i++) {
         .size(50) 
         .strokeStyle(null) 
         .angle(45)
-        .shape(function(d) {return (d.movement === 't' ? "triangle" : "circle");})        
+        .shape(function(d) {return shapes[d.movement]; })
         .fillStyle(function(d) { return (activeItem == d ? "red" : "#aec7e8"); })
 		.events("all")
 		.event("click", function(d) {activeItem = d; return this.parent;})
