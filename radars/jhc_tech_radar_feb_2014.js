@@ -4,10 +4,10 @@ var radar_data = [
 {"name":"Message Bus", "pc":{"r":170,"t":105},"movement":"c"},
 {"name":"Paging DelphiComms", "pc":{"r":380,"t":165},"movement":"s"},    
 {"name":"REST (Internal)", "pc":{"r":260,"t":145},"movement":"c"},    
-{"name":"Domain Driven Design", "pc":{"r":150,"t":155},"movement":"c"},
+{"name":"Domain Driven Design", "pc":{"r":150,"t":150},"movement":"c"},
 {"name":"Single-Page Web-Apps", "pc":{"r":240,"t":125},"movement":"t"},
 {"name":"Vertex 5250 Handler", "pc":{"r":280,"t":110},"movement":"t"},
-{"name":"Distributed Source Control", "pc":{"r":160,"t":110},"movement":"c"},
+{"name":"Distributed Source Control", "pc":{"r":160,"t":170},"movement":"c"},
 
 // Tools
 {"name":"Delphi XE5", "pc":{"r":30,"t":35},"movement":"c"},   
