@@ -49,8 +49,8 @@ function draw_legend(quad, left, top) {
        .top(qtop -8)
        .anchor("left")
        .add(pv.Label)
-             .text(quad.name)
-             .font('24pt');
+       .text(quad.name)
+       .font('24pt');
   var t = radar_data.slice(quad.start,quad.end);
   
   radar.add(pv.Dot) 
@@ -60,9 +60,9 @@ function draw_legend(quad, left, top) {
       .size(8) 
       .strokeStyle(null) 
       .fillStyle("#aec7e8") 
-    .anchor("right")
-          .add(pv.Label)
-          .text(function(d) {return (quad.start + 1 + this.index) + ". " + d.name;} );
+      .anchor("right")
+      .add(pv.Label)
+      .text(function(d) {return (quad.start + 1 + this.index) + ". " + d.name;} );
 }
 /*
 //race conditions?
@@ -93,7 +93,7 @@ for (var i = 0; i < radar_quadrants.length; i++) {
         .strokeStyle(null) 
         .angle(45)
         .shape(function(d) {return shapes[d.movement]; })
-        .angle(180)
+        .angle(3.141)
 	.fillStyle(function(d) { return (activeItem == d ? "red" : "#aec7e8"); })
 	.events("all")
 	.event("click", function(d) {activeItem = d; return this.parent;})
@@ -120,7 +120,7 @@ for (var i = 0; i < radar_quadrants.length; i++) {
         .strokeStyle(null) 
         .angle(45)
         .shape(function(d) {return shapes[d.movement]; })
-        .angle(180)
+        .angle(3.141)
 	.fillStyle(function(d) { return (activeItem == d ? "red" : "#aec7e8"); })
 	.events("all")
 	.event("click", function(d) {activeItem = d; return this.parent;})
@@ -142,7 +142,7 @@ for (var i = 0; i < radar_quadrants.length; i++) {
         .size(50) 
         .angle(45)
         .shape(function(d) {return shapes[d.movement]; })
-        .angle(180)
+        .angle(3.141)
         .strokeStyle(null) 
         .fillStyle(function(d) { return (activeItem == d ? "red" : "#aec7e8"); })
 	.events("all")
@@ -166,7 +166,7 @@ for (var i = 0; i < radar_quadrants.length; i++) {
         .strokeStyle(null) 
         .angle(45)
         .shape(function(d) {return shapes[d.movement]; })
-        .angle(180)
+        .angle(3.141)
         .fillStyle(function(d) { return (activeItem == d ? "red" : "#aec7e8"); })
 	.events("all")
 	.event("click", function(d) {activeItem = d; return this.parent;})
