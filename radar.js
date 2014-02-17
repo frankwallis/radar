@@ -173,7 +173,7 @@ radar.add(pv.Dot)
        .strokeStyle("#ccc")
        .anchor("top")
        .add(pv.Label).text(function(d) { return d.name;})
-	   .font("bold 14px sans-serif").textBaseline("bottom").textAlign("left").textMargin(7);
+	   .font("bold 14px sans-serif").textBaseline("bottom").textAlign("left").textMargin(72);
 
 //quadrant lines
 radar.add(pv.Line)
