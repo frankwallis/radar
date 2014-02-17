@@ -31,7 +31,7 @@ var radar_data = [
 {"name":"Java 8", "pc":{"r":200,"t":260},"movement":"c"},
 {"name":"Typescript", "pc":{"r":140,"t":240},"movement":"c"},   
 {"name":"Scala", "pc":{"r":130,"t":200},"movement":"c"},   
-{"name":"Python", "pc":{"r":270,"t":220},"movement":"s"},   
+{"name":"Python", "pc":{"r":270,"t":260},"movement":"s"},   
 
 // Libraries & Frameworks
 {"name":"JTOpen", "pc":{"r":330,"t":300},"movement":"c"},   
