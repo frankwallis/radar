@@ -1,8 +1,8 @@
 var radar_data = [
 
 // Techniques
-{"name":"Message Bus", "pc":{"r":170,"t":105},"movement":"t"},
-{"name":"Paging DelphiComms", "pc":{"r":380,"t":165},"movement":"c"},    
+{"name":"Message Bus", "pc":{"r":170,"t":105},"movement":"c"},
+{"name":"Paging DelphiComms", "pc":{"r":380,"t":165},"movement":"s"},    
 {"name":"REST (Internal)", "pc":{"r":260,"t":145},"movement":"t"},    
 {"name":"Domain Driven Design", "pc":{"r":150,"t":155},"movement":"c"},
 {"name":"Single-Page Web-Apps", "pc":{"r":240,"t":125},"movement":"t"},
@@ -10,9 +10,9 @@ var radar_data = [
 {"name":"Distributed Source Control", "pc":{"r":160,"t":5},"movement":"c"},
 
 // Tools
-{"name":"Delphi XE5", "pc":{"r":30,"t":35},"movement":"t"},   
+{"name":"Delphi XE5", "pc":{"r":30,"t":35},"movement":"c"},   
 {"name":"Enterprise Architect", "pc":{"r":150,"t":65},"movement":"c"},   
-{"name":"Gradle", "pc":{"r":360,"t":35},"movement":"t"},   
+{"name":"Gradle", "pc":{"r":360,"t":35},"movement":"s"},   
 {"name":"Pacemaker", "pc":{"r":50,"t":65},"movement":"t"},   
 {"name":"Nuget", "pc":{"r":240,"t":85},"movement":"t"},   
 {"name":"Gulp", "pc":{"r":260,"t":55},"movement":"t"},   
@@ -30,11 +30,11 @@ var radar_data = [
 {"name":"Vert.io", "pc":{"r":250,"t":250},"movement":"t"},
 {"name":"Java 8", "pc":{"r":200,"t":260},"movement":"c"},
 {"name":"Typescript", "pc":{"r":140,"t":240},"movement":"c"},   
-{"name":"Scala", "pc":{"r":130,"t":100},"movement":"c"},   
+{"name":"Scala", "pc":{"r":130,"t":200},"movement":"c"},   
 {"name":"Python", "pc":{"r":270,"t":220},"movement":"s"},   
 
 // Libraries & Frameworks
-{"name":"JTOpen", "pc":{"r":330,"t":45},"movement":"c"},   
+{"name":"JTOpen", "pc":{"r":330,"t":300},"movement":"c"},   
 {"name":"Akka", "pc":{"r":350,"t":310},"movement":"c"},   
 {"name":"Slick", "pc":{"r":330,"t":325},"movement":"s"},   
 {"name":"Wicket", "pc":{"r":50,"t":320},"movement":"s"},
@@ -47,8 +47,8 @@ var radar_data = [
 var radar_quadrants = [
 {"name":"Techniques", "start":0, "end":7},
 {"name":"Tools", "start":7, "end":17},
-{"name":"Platforms", "start":17, "end":28},
-{"name":"Languages & Frameworks", "start":28, "end":34}
+{"name":"Platforms", "start":17, "end":27},
+{"name":"Languages & Frameworks", "start":27, "end":34}
 ];
 //
 var radar_arcs = [{'r':100,'name':'Adopt'},{'r':200,'name':'Trial'},{'r':300,'name':'Assess'},{'r':400,'name':'Hold'}];
