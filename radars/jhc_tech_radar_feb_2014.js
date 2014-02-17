@@ -11,28 +11,30 @@ var radar_data = [
 
 // Tools
 {"name":"Delphi XE5", "pc":{"r":30,"t":35},"movement":"t"},   
-{"name":"JTOpen", "pc":{"r":330,"t":45},"movement":"c"},   
 {"name":"Enterprise Architect", "pc":{"r":150,"t":65},"movement":"c"},   
 {"name":"Gradle", "pc":{"r":360,"t":35},"movement":"t"},   
 {"name":"Pacemaker", "pc":{"r":50,"t":65},"movement":"t"},   
 {"name":"Nuget", "pc":{"r":240,"t":85},"movement":"t"},   
 {"name":"Gulp", "pc":{"r":260,"t":55},"movement":"t"},   
 {"name":"SBT", "pc":{"r":260,"t":15},"movement":"t"},
-{"name":"NodeJS/NPM", "pc":{"r":150,"t":260},"movement":"t"},
+{"name":"NodeJS/NPM", "pc":{"r":150,"t":75},"movement":"t"},
+{"name":"Docker", "pc":{"r":350,"t":80},"movement":"t"},
+{"name":"BrowserStack", "pc":{"r":350,"t":20},"movement":"t"},
 
-// Platforms
+// Platforms & Languages
 {"name":"HTML5 Web", "pc":{"r":80,"t":200},"movement":"c"},
-{"name":"Dynamics CRM", "pc":{"r":180,"t":220},"movement":"c"},   
-{"name":"Office 2013", "pc":{"r":250,"t":230},"movement":"c"},   
-{"name":"WinRT", "pc":{"r":240,"t":240},"movement":"c"},   
-{"name":"iSeries Linux Partition", "pc":{"r":240,"t":250},"movement":"c"},   
-{"name":"Vert.io", "pc":{"r":250,"t":260},"movement":"t"},
+{"name":"Dynamics CRM", "pc":{"r":180,"t":210},"movement":"c"},   
+{"name":"Office 2013", "pc":{"r":250,"t":220},"movement":"c"},   
+{"name":"WinRT", "pc":{"r":240,"t":230},"movement":"c"},   
+{"name":"iSeries Linux", "pc":{"r":240,"t":240},"movement":"c"},   
+{"name":"Vert.io", "pc":{"r":250,"t":250},"movement":"t"},
+{"name":"Java 8", "pc":{"r":200,"t":260},"movement":"c"},
+{"name":"Typescript", "pc":{"r":140,"t":240},"movement":"c"},   
+{"name":"Scala", "pc":{"r":130,"t":100},"movement":"c"},   
+{"name":"Python", "pc":{"r":270,"t":220},"movement":"c"},   
 
-// Languages & Frameworks
-{"name":"Java 8", "pc":{"r":350,"t":280},"movement":"c"},
-{"name":"Typescript", "pc":{"r":140,"t":280},"movement":"c"},   
-{"name":"Scala", "pc":{"r":130,"t":300},"movement":"c"},   
-{"name":"Python", "pc":{"r":270,"t":300},"movement":"c"},   
+// Libraries & Frameworks
+{"name":"JTOpen", "pc":{"r":330,"t":45},"movement":"c"},   
 {"name":"Akka", "pc":{"r":350,"t":310},"movement":"c"},   
 {"name":"Slick", "pc":{"r":80,"t":325},"movement":"t"},   
 {"name":"Wicket", "pc":{"r":50,"t":320},"movement":"s"},
@@ -44,9 +46,9 @@ var radar_data = [
 //left to right -> top to bottom
 var radar_quadrants = [
 {"name":"Techniques", "start":0, "end":7},
-{"name":"Tools", "start":7, "end":15},
-{"name":"Platforms", "start":15, "end":21},
-{"name":"Languages & Frameworks", "start":21, "end":32}
+{"name":"Tools", "start":7, "end":17},
+{"name":"Platforms", "start":17, "end":28},
+{"name":"Languages & Frameworks", "start":28, "end":34}
 ];
 //
 var radar_arcs = [{'r':100,'name':'Adopt'},{'r':200,'name':'Trial'},{'r':300,'name':'Assess'},{'r':400,'name':'Hold'}];
