@@ -28,7 +28,7 @@ var radar_data = [
 {"name":"WinRT", "pc":{"r":330,"t":230},"movement":"s"},   
 {"name":"iSeries Linux", "pc":{"r":240,"t":240},"movement":"c"},   
 {"name":"Vert.io", "pc":{"r":250,"t":250},"movement":"t"},
-{"name":"Java 8", "pc":{"r":200,"t":260},"movement":"c"},
+{"name":"Java 8", "pc":{"r":220,"t":260},"movement":"c"},
 {"name":"Typescript", "pc":{"r":140,"t":240},"movement":"c"},   
 {"name":"Scala", "pc":{"r":130,"t":200},"movement":"c"},   
 {"name":"Python", "pc":{"r":270,"t":260},"movement":"s"},   
