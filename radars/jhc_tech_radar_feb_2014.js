@@ -36,8 +36,8 @@ var radar_data = [
 {"name":"Akka", "pc":{"r":350,"t":310},"movement":"c"},   
 {"name":"Slick", "pc":{"r":80,"t":325},"movement":"t"},   
 {"name":"Wicket", "pc":{"r":50,"t":320},"movement":"s"},
-{"name":"AngularJS", "pc":{"r":50,"t":335},"movement":"t"},
-{"name":"Firemonkey", "pc":{"r":50,"t":350},"movement":"c"}
+{"name":"AngularJS", "pc":{"r":50,"t":295},"movement":"t"},
+{"name":"Firemonkey", "pc":{"r":80,"t":280},"movement":"c"}
 
 ];
 
