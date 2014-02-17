@@ -7,14 +7,14 @@ var radar_data = [
 {"name":"Domain Driven Design", "pc":{"r":150,"t":155},"movement":"c"},
 {"name":"Single-Page Web-Apps", "pc":{"r":240,"t":125},"movement":"t"},
 {"name":"Vertex 5250 Handler", "pc":{"r":280,"t":110},"movement":"t"},
-{"name":"Distributed Source Control", "pc":{"r":160,"t":5},"movement":"c"},
+{"name":"Distributed Source Control", "pc":{"r":160,"t":110},"movement":"c"},
 
 // Tools
 {"name":"Delphi XE5", "pc":{"r":30,"t":35},"movement":"c"},   
 {"name":"Enterprise Architect", "pc":{"r":150,"t":35},"movement":"c"},   
 {"name":"Gradle", "pc":{"r":360,"t":35},"movement":"s"},   
 {"name":"Pacemaker", "pc":{"r":50,"t":65},"movement":"c"},   
-{"name":"Nuget", "pc":{"r":240,"t":85},"movement":"t"},   
+{"name":"Nuget", "pc":{"r":240,"t":85},"movement":"c"},   
 {"name":"Gulp", "pc":{"r":260,"t":55},"movement":"t"},   
 {"name":"SBT", "pc":{"r":260,"t":15},"movement":"t"},
 {"name":"NodeJS/NPM", "pc":{"r":150,"t":75},"movement":"t"},
@@ -46,9 +46,9 @@ var radar_data = [
 //left to right -> top to bottom
 var radar_quadrants = [
 {"name":"Techniques", "start":0, "end":7},
-{"name":"Tools", "start":8, "end":17},
-{"name":"Platforms", "start":18, "end":27},
-{"name":"Languages & Frameworks", "start":28, "end":34}
+{"name":"Tools", "start":7, "end":17},
+{"name":"Platforms", "start":17, "end":27},
+{"name":"Languages & Frameworks", "start":27, "end":34}
 ];
 //
 var radar_arcs = [{'r':100,'name':'Adopt'},{'r':200,'name':'Trial'},{'r':300,'name':'Assess'},{'r':400,'name':'Hold'}];
