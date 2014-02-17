@@ -1,6 +1,6 @@
 function init(h,w) {
 
- document.getElementById('title').text = radar_title;
+ document.getElementById('project_tagline').text = radar_title;
 
  var activeItem = null;
  
