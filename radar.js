@@ -7,7 +7,7 @@ function init(h,w) {
  var shapes = {
 	c: "circle",
 	t: "triangle",
-	s: "star" }
+	s: "square" }
  
  var radar = new pv.Panel()
       .width(w)
@@ -29,6 +29,7 @@ function init(h,w) {
          .fillStyle(function(d) { return (activeItem == d ? "red" : "#aec7e8"); })
 	 .size(60)
          .shape(function(d) {return shapes[d.movement]; })
+         .angle(0)
 	 .events("all")
 	 .event("click", function(d) {activeItem = d; return this.parent;})
 		 //.event("mousedown", pv.Behavior.select())
@@ -92,9 +93,10 @@ for (var i = 0; i < radar_quadrants.length; i++) {
         .strokeStyle(null) 
         .angle(45)
         .shape(function(d) {return shapes[d.movement]; })
-		.fillStyle(function(d) { return (activeItem == d ? "red" : "#aec7e8"); })
-		.events("all")
-  	    .event("click", function(d) {activeItem = d; return this.parent;})
+        .angle(0)
+	.fillStyle(function(d) { return (activeItem == d ? "red" : "#aec7e8"); })
+	.events("all")
+	.event("click", function(d) {activeItem = d; return this.parent;})
       .anchor("right").add(pv.Label)
 	  .text(function(d) {return this.index + 1 + ". " + d.name;} )
 	  .textBaseline("middle")
@@ -118,9 +120,10 @@ for (var i = 0; i < radar_quadrants.length; i++) {
         .strokeStyle(null) 
         .angle(45)
         .shape(function(d) {return shapes[d.movement]; })
-		.fillStyle(function(d) { return (activeItem == d ? "red" : "#aec7e8"); })
-		.events("all")
-		.event("click", function(d) {activeItem = d; return this.parent;})
+        .angle(0)
+	.fillStyle(function(d) { return (activeItem == d ? "red" : "#aec7e8"); })
+	.events("all")
+	.event("click", function(d) {activeItem = d; return this.parent;})
       .anchor("right").add(pv.Label).text(function(d) {return this.index + 1 + radar_quadrants[2].start + ". " + d.name;} )
 	  .textMargin(10)
 	  .font(function(d) { return (activeItem == d ? "bold 16px sans-serif" : "16px sans-serif"); });
@@ -139,13 +142,14 @@ for (var i = 0; i < radar_quadrants.length; i++) {
         .size(50) 
         .angle(45)
         .shape(function(d) {return shapes[d.movement]; })
+        .angle(0)
         .strokeStyle(null) 
         .fillStyle(function(d) { return (activeItem == d ? "red" : "#aec7e8"); })
-		.events("all")
-  	    .event("click", function(d) {activeItem = d; return this.parent;})
+	.events("all")
+  	.event("click", function(d) {activeItem = d; return this.parent;})
         .anchor("right").add(pv.Label).text(function(d) {return this.index + 1 + radar_quadrants[1].start + ". " + d.name;} )
-		.textMargin(10)
-		.font(function(d) { return (activeItem == d ? "bold 16px sans-serif" : "16px sans-serif"); });
+	.textMargin(10)
+	.font(function(d) { return (activeItem == d ? "bold 16px sans-serif" : "16px sans-serif"); });
 
   radar.anchor("left").add(pv.Label)
        .left(w-250+30)
@@ -162,12 +166,13 @@ for (var i = 0; i < radar_quadrants.length; i++) {
         .strokeStyle(null) 
         .angle(45)
         .shape(function(d) {return shapes[d.movement]; })
+        .angle(0)
         .fillStyle(function(d) { return (activeItem == d ? "red" : "#aec7e8"); })
-		.events("all")
-		.event("click", function(d) {activeItem = d; return this.parent;})
+	.events("all")
+	.event("click", function(d) {activeItem = d; return this.parent;})
         .anchor("right").add(pv.Label).text(function(d) {return this.index + 1 + radar_quadrants[3].start + ". " + d.name;} )
-		.textMargin(10)
-		.font(function(d) { return (activeItem == d ? "bold 16px sans-serif" : "16px sans-serif"); });
+	.textMargin(10)
+	.font(function(d) { return (activeItem == d ? "bold 16px sans-serif" : "16px sans-serif"); });
 
 //arcs
 radar.add(pv.Dot)
