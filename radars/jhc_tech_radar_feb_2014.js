@@ -3,7 +3,7 @@ var radar_data = [
 // Techniques
 {"name":"Message Bus", "pc":{"r":170,"t":105},"movement":"c"},
 {"name":"Paging DelphiComms", "pc":{"r":380,"t":165},"movement":"s"},    
-{"name":"REST (Internal)", "pc":{"r":260,"t":145},"movement":"t"},    
+{"name":"REST (Internal)", "pc":{"r":260,"t":145},"movement":"c"},    
 {"name":"Domain Driven Design", "pc":{"r":150,"t":155},"movement":"c"},
 {"name":"Single-Page Web-Apps", "pc":{"r":240,"t":125},"movement":"t"},
 {"name":"Vertex 5250 Handler", "pc":{"r":280,"t":110},"movement":"t"},
@@ -11,9 +11,9 @@ var radar_data = [
 
 // Tools
 {"name":"Delphi XE5", "pc":{"r":30,"t":35},"movement":"c"},   
-{"name":"Enterprise Architect", "pc":{"r":150,"t":65},"movement":"c"},   
+{"name":"Enterprise Architect", "pc":{"r":150,"t":35},"movement":"c"},   
 {"name":"Gradle", "pc":{"r":360,"t":35},"movement":"s"},   
-{"name":"Pacemaker", "pc":{"r":50,"t":65},"movement":"t"},   
+{"name":"Pacemaker", "pc":{"r":50,"t":65},"movement":"c"},   
 {"name":"Nuget", "pc":{"r":240,"t":85},"movement":"t"},   
 {"name":"Gulp", "pc":{"r":260,"t":55},"movement":"t"},   
 {"name":"SBT", "pc":{"r":260,"t":15},"movement":"t"},
@@ -46,9 +46,9 @@ var radar_data = [
 //left to right -> top to bottom
 var radar_quadrants = [
 {"name":"Techniques", "start":0, "end":7},
-{"name":"Tools", "start":7, "end":17},
-{"name":"Platforms", "start":17, "end":27},
-{"name":"Languages & Frameworks", "start":27, "end":34}
+{"name":"Tools", "start":8, "end":17},
+{"name":"Platforms", "start":18, "end":27},
+{"name":"Languages & Frameworks", "start":28, "end":34}
 ];
 //
 var radar_arcs = [{'r':100,'name':'Adopt'},{'r':200,'name':'Trial'},{'r':300,'name':'Assess'},{'r':400,'name':'Hold'}];
