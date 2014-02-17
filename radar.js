@@ -29,7 +29,7 @@ function init(h,w) {
          .fillStyle(function(d) { return (activeItem == d ? "red" : "#aec7e8"); })
 	 .size(60)
          .shape(function(d) {return shapes[d.movement]; })
-         .angle(270)
+         .angle(0)
 	 .events("all")
 	 .event("click", function(d) {activeItem = d; return this.parent;})
 		 //.event("mousedown", pv.Behavior.select())
