@@ -7,7 +7,7 @@ function init(h,w) {
  var shapes = {
 	c: "circle",
 	t: "triangle",
-	s: "square" }
+	s: "diamond" }
  
  var radar = new pv.Panel()
       .width(w)
