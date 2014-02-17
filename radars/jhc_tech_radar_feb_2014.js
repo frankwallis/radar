@@ -25,13 +25,13 @@ var radar_data = [
 {"name":"HTML5 Web", "pc":{"r":80,"t":200},"movement":"c"},
 {"name":"Dynamics CRM", "pc":{"r":180,"t":210},"movement":"c"},   
 {"name":"Office 2013", "pc":{"r":250,"t":220},"movement":"c"},   
-{"name":"WinRT", "pc":{"r":240,"t":230},"movement":"c"},   
+{"name":"WinRT", "pc":{"r":330,"t":230},"movement":"s"},   
 {"name":"iSeries Linux", "pc":{"r":240,"t":240},"movement":"c"},   
 {"name":"Vert.io", "pc":{"r":250,"t":250},"movement":"t"},
 {"name":"Java 8", "pc":{"r":200,"t":260},"movement":"c"},
 {"name":"Typescript", "pc":{"r":140,"t":240},"movement":"c"},   
 {"name":"Scala", "pc":{"r":130,"t":100},"movement":"c"},   
-{"name":"Python", "pc":{"r":270,"t":220},"movement":"c"},   
+{"name":"Python", "pc":{"r":270,"t":220},"movement":"s"},   
 
 // Libraries & Frameworks
 {"name":"JTOpen", "pc":{"r":330,"t":45},"movement":"c"},   
