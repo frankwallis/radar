@@ -5,8 +5,8 @@ function init(h,w) {
  var activeItem = null;
  
  var shapes = {
-	t: "circle",
-	c: "triangle",
+	c: "circle",
+	t: "triangle",
 	s: "square" }
  
  var radar = new pv.Panel()
