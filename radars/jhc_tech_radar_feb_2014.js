@@ -44,7 +44,8 @@ var radar_data = [
 {"name":"Slick", "pc":{"r":330,"t":325},"movement":"s"},   
 {"name":"Wicket", "pc":{"r":50,"t":320},"movement":"s"},
 {"name":"AngularJS", "pc":{"r":250,"t":295},"movement":"t"},
-{"name":"Firemonkey", "pc":{"r":330,"t":280},"movement":"c"}
+{"name":"Firemonkey", "pc":{"r":330,"t":280},"movement":"c"},
+{"name":"Bootstrap", "pc":{"r":260,"t":340},"movement":"c"}
 
 ];
 
@@ -53,7 +54,7 @@ var radar_quadrants = [
 {"name":"Techniques", "start":0, "end":9},
 {"name":"Tools", "start":9, "end":22},
 {"name":"Platforms & Languages", "start":22, "end":32},
-{"name":"Libraries & Frameworks", "start":32, "end":39}
+{"name":"Libraries & Frameworks", "start":32, "end":40}
 ];
 //
 var radar_arcs = [{'r':100,'name':'Adopt'},{'r':200,'name':'Trial'},{'r':300,'name':'Assess'},{'r':400,'name':'Hold'}];
