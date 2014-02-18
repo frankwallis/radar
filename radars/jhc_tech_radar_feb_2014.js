@@ -52,8 +52,8 @@ var radar_data = [
 var radar_quadrants = [
 {"name":"Techniques", "start":0, "end":9},
 {"name":"Tools", "start":9, "end":22},
-{"name":"Platforms", "start":22, "end":32},
-{"name":"Languages & Frameworks", "start":32, "end":39}
+{"name":"Platforms & Languages", "start":22, "end":32},
+{"name":"Libraries & Frameworks", "start":32, "end":39}
 ];
 //
 var radar_arcs = [{'r':100,'name':'Adopt'},{'r':200,'name':'Trial'},{'r':300,'name':'Assess'},{'r':400,'name':'Hold'}];
