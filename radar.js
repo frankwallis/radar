@@ -50,7 +50,7 @@ function draw_legend(quad, left, top) {
        .anchor("left")
        .add(pv.Label)
        .text(quad.name)
-       .font('24px');
+       //.font('24px');
   var t = radar_data.slice(quad.start,quad.end);
   
   radar.add(pv.Dot) 
