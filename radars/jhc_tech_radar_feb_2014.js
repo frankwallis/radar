@@ -2,7 +2,7 @@ var radar_data = [
 
 // Techniques
 {"name":"Message Bus", "pc":{"r":170,"t":105},"movement":"c"},
-{"name":"Paging DelphiComms", "pc":{"r":380,"t":165},"movement":"s"},    
+{"name":"Paging DelphiComms", "pc":{"r":380,"t":165},"movement":"t"},    
 {"name":"REST (Internal)", "pc":{"r":260,"t":145},"movement":"c"},    
 {"name":"Domain Driven Design", "pc":{"r":150,"t":150},"movement":"c"},
 {"name":"Single-Page Web-Apps", "pc":{"r":240,"t":125},"movement":"t"},
@@ -39,7 +39,7 @@ var radar_data = [
 {"name":"Python", "pc":{"r":270,"t":190},"movement":"s"},   
 
 // Libraries & Frameworks
-{"name":"JTOpen", "pc":{"r":330,"t":300},"movement":"c"},   
+{"name":"JTOpen", "pc":{"r":230,"t":350},"movement":"c"},   
 {"name":"Akka", "pc":{"r":350,"t":310},"movement":"c"},   
 {"name":"Slick", "pc":{"r":330,"t":325},"movement":"s"},   
 {"name":"Wicket", "pc":{"r":50,"t":320},"movement":"s"},
