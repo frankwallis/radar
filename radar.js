@@ -137,7 +137,7 @@ for (var i = 0; i < radar_quadrants.length; i++) {
 
   radar.add(pv.Dot) 
         .data(radar_data.slice(radar_quadrants[1].start,radar_quadrants[1].end)) 
-        .left(w-250+30) 
+        .left(w-250+40) 
         .top(function() {return (40 + this.index * 20);}) 
         .size(50) 
         .angle(45)
@@ -160,7 +160,7 @@ for (var i = 0; i < radar_quadrants.length; i++) {
 
     radar.add(pv.Dot) 
         .data(radar_data.slice(radar_quadrants[3].start,radar_quadrants[3].end)) 
-        .left(w-250+30) 
+        .left(w-250+40) 
         .top(function() {return ((h/2) + 170 + this.index * 20);}) 
         .size(50) 
         .strokeStyle(null) 
