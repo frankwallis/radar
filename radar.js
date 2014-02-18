@@ -129,7 +129,7 @@ for (var i = 0; i < radar_quadrants.length; i++) {
 	  .font(function(d) { return (activeItem == d ? "bold 16px sans-serif" : "16px sans-serif"); });
 
   radar.anchor("left").add(pv.Label)
-       .left(w-250+30)  
+       .left(w-250+40)  
        .top(18)
        .text(radar_quadrants[1].name)
        .font("18px sans-serif");
@@ -152,7 +152,7 @@ for (var i = 0; i < radar_quadrants.length; i++) {
 	.font(function(d) { return (activeItem == d ? "bold 16px sans-serif" : "16px sans-serif"); });
 
   radar.anchor("left").add(pv.Label)
-       .left(w-250+30)
+       .left(w-250+40)
        .top(h/2 + 148)
        .fillStyle("#aec7e8") 
        .text(radar_quadrants[3].name)
